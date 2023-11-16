@@ -1,10 +1,28 @@
+/*
+	RULE terdiri dari	
+	baris pertama (footer) merupakan SELECTOR
+	baris bawahnya ditandai {} merupakan DECLARATION sebagai properti styling
+*/
+
+/*
+	Pada bagian CSS ada GROUP SELECTOR seperti h2
+	yang akan diterapkan ke semua format h2
+*/
+
+
+
+
 body {
   font-family: sans-serif;
 }
  
-h2 {
+h2, h1 {
   color: #00a2c6;
 }
+
+/*
+	terdapat 2 selector h1 dan h2 sehingga dapat diterapkan dalam 2 kelompok itu
+*/
  
 h3 {
   color: #00a2c6;
@@ -15,3 +33,18 @@ footer {
   color: white;
   background-color: #00a2c6;
 }
+
+/*
+	CSS berarti aliran jadi style terakhir yang akan ditampilkan jika memiliki selector yang sama
+	seperti berikut
+*/
+
+p {
+  color: red !important;
+}
+
+p {
+  color: blue;
+}
+
+/* untuk menghindari hal itu maka perlu menggunakan style !important bagian akhir nya */
