@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <!-- elemen meta untuk menampilkan Title di TAB Browser -->
     <title> Halaman Profil Bandung </title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -91,22 +92,94 @@
 					</p>
 				</section>
 			</article>
+			
+			<article>
+				<table border="1">
+					<tr>
+						<th rowspan="3">18:00</th>
+						<th>19:00</th>
+						<th>20:00</th>
+					</tr>
+					<tr>
+						<td colspan="2">Avenger</td>
+						<td>It Chapter 2</td>
+					<tr>
+						<td>One Piece</td>
+						<td>Wheatering with You</td>
+						<td>Gundala</td>
+					</tr>
+					<tr>
+						<td>Gundala</td>
+						<td colspan="2">Avenger</td>
+					</tr>
+				</table>
+				<!-- elemen tabel atribut border untuk ketebalan garis, rowspan untuk menggabung garis, colspan untuk menggabung kolom -->
+				<!-- elemen tr untuk baris apa saja, elemen th untuk menandakan head baris awal, elemen td untuk menandakan tabel data -->
+			</article>
 		</div>
 		
 		<aside>
 		<!-- elemen aside merupakan konten yang berada disamping -->
-			<h2>Kota Bandung</h2>
-			<p>
-				Kota Kembang Paris van Java
-			</p>
+			<article>
+				<header>
+					<h2>Kota Bandung</h2>
+					<p>
+						Kota Kembang Paris van Java
+					</p>
 	
-			<figure>
-			<!-- elemen figure untuk menampilkan konten copyright -->
-				<img src="assets/bandung-badge.png">
-				<figcaption>Lambang</figcaption>
-				<!-- elemen figcaption untuk keterangan dari copyright -->
-			</figure>
+					<figure>
+					<!-- elemen figure untuk menampilkan konten copyright -->
+						<img src="assets/bandung-badge.png">
+						<figcaption>Lambang</figcaption>
+						<!-- elemen figcaption untuk keterangan dari copyright -->
+					</figure>
+				</header>
+				
+				<section>
+					<h3>Informasi Lainnya</h3>
+					<table>
+						<tr>
+							<th>Negara</th>
+							<td>Indonesia</td>
+						</tr>
+						<tr>
+							<th>Hari Jadi</th>
+							<td>25 September 1810</td>
+						</tr>
+						<tr>
+							<th>Luas Total</th>
+							<td>167.67 km<sup>2</sup></td>
+						</tr>
+						<tr>
+							<th>Bahasa Daerah</th>
+							<td>Sunda</td>
+						</tr>
+						<tr>
+							<th>Kode Teleop</th>
+							<td>+62 22</td>
+						</tr>
+					</table>
+				</section>
+			</article>
 		</aside>
+		
+		<form>
+		<!-- elemen form untuk membungkus bagan input sehingga dapat dikirim ke server -->
+		<div>
+			<label for="email">Email</label><br>
+			<!-- elemen label untuk memberi keterangan itu label elemen input untuk memasukkan/ input data bisa berupa text, radio, img, dll; atribut for untuk link ke input id email -->
+			<input type="email" id="email" placeholder="example@mail.com" name="email" required>
+			<!-- atribut id untuk penanda link email, atribut placeholder memberi tulisan sementara input -->
+		</div>
+		
+		<div>
+			<label for="password">Password</label>
+			<input type="password" id="password" placeholder="********" name="password" required>
+		</div>
+		
+		<button type="submit">Submit</button>
+		</form>
+		
 		
 		<p>
 			Informasi selengkapnya bisa Anda dapatkan di
