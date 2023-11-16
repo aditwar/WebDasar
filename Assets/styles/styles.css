@@ -12,11 +12,13 @@
 
 
 
-body {
+body
+{
   font-family: sans-serif;
 }
  
-h2, h1 {
+h2, h1
+{
   color: #00a2c6;
 }
 
@@ -24,11 +26,13 @@ h2, h1 {
 	terdapat 2 selector h1 dan h2 sehingga dapat diterapkan dalam 2 kelompok itu
 */
  
-h3 {
+h3
+{
   color: #00a2c6;
 }
  
-footer {
+footer
+{
   padding: 20px;
   color: white;
   background-color: #00a2c6;
@@ -39,12 +43,21 @@ footer {
 	seperti berikut
 */
 
-p {
+p
+{
   color: red !important;
 }
 
-p {
+p
+{
   color: blue;
 }
 
 /* untuk menghindari hal itu maka perlu menggunakan style !important bagian akhir nya */
+
+
+.warnahijau
+{
+	color: green;
+}
+/* CLASS SELECTOR ini hanya menerapkan style tertentu sesuai link yang ditandai CLASS */
