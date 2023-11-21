@@ -168,3 +168,23 @@ p
 /*
 	Ingin menyeting semua kata diawali huruf kapital
 */
+
+
+.spacing
+{
+	letter-spacing: 4px;
+	word-spacing: 1.5em;
+}
+
+/*
+	memberikan spasi pada tiap huruf atau kata
+*/
+
+.shadow
+{
+	text-shadow: 4px 4px 5px #000000;
+}
+
+/*
+	bayangan teks ini memiliki value (horisontal, vertikal, blur, warna)
+*/
