@@ -14,23 +14,46 @@
 
 body
 {
-  font-family: sans-serif;
+  font-family: sans-serif, Arial, Verdana;
 }
+/*
+	Font mengikuti urutan dri yg terdepan dan itu harus tersedia secara umum, kalau tidak menggunakan @font-face yang dipanggil dari url
+*/
  
+@font-face
+{
+	font-family: "Dicoding Font";
+	src: url('FILE-FONT.TTF');
+}
+/*
+	Baru diterapkan pada bagian tertentu
+*/
+
+
+
+p
+{
+	font-family:"Dicoding Font";
+}
+
+
 h2, h1
 {
   color: #00a2c6;
+  font-size: 1.5em;
 }
 
 /*
 	terdapat 2 selector h1 dan h2 sehingga dapat diterapkan dalam 2 kelompok itu
+	Font size em berarti 100% tanpa menggunakan spasi, jika 2em brarti ukurannya 2 kali font biasa, ukuran lain juga bisa sesuaikan Tabel
 */
  
+
 h3
 {
   color: #00a2c6;
 }
- 
+
 footer
 {
   padding: 20px;
@@ -56,8 +79,92 @@ p
 /* untuk menghindari hal itu maka perlu menggunakan style !important bagian akhir nya */
 
 
+
+
+
+
+
 .warnahijau
 {
 	color: green;
 }
-/* CLASS SELECTOR ini hanya menerapkan style tertentu sesuai link yang ditandai CLASS */
+/*
+	CLASS SELECTOR ini hanya menerapkan style tertentu sesuai link yang ditandai CLASS
+	Jadi hanya berlaku saja sebagai initial (ditandai titik tanpa spasi .warnahijau)
+*/
+
+
+
+.bold
+{
+	font-weight: bold;
+}
+/*
+	ketebalan font sesuai link CLASS
+*/
+
+
+
+.italic
+{
+	font-style: italic;
+}
+
+/*
+	postur font sesuai link CLASS
+*/
+
+
+
+.ln2em
+{
+	line-height: 2em;
+}
+
+/*
+	Jarak antar baris kalimat 2 kali tinggi huruf
+*/
+
+
+
+.textindent
+{
+	text-indent: 2em;
+}
+
+/*
+	Jarak yang menjorok pada baris pertama paragraf itu
+*/
+
+
+
+.textalign
+{
+	text-align: right;
+}
+
+/*
+	Rata paragraf tersebut (left, right, center, justify)
+*/
+
+
+
+.decor
+{
+	text-decoration: line-through;
+}
+
+/*
+	Menambahkan garis melintang pada text (underline, overline, line-through, none/ digunakan juka ingin menghilangkan tanda underline pada link text)
+*/
+
+
+
+.transform
+{
+	text-transform: capitalize;
+}
+
+/*
+	Ingin menyeting semua kata diawali huruf kapital
+*/
